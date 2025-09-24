@@ -1,0 +1,31 @@
+*{
+    padding: 10px;
+    background-color: rgb(35, 35, 192);
+}
+.sticky{
+position: sticky;
+top: 0;
+right: 20px;
+width: 200px;
+border: 2px solid yellow;
+opacity: 0.1;
+}
+.relative{
+    position: relative;
+    left: 100px;
+    border: 2px solid green;
+    opacity: 0.3;
+}
+.absolute{
+    position: absolute;
+    left: 50px;
+    border: 2px solid red;
+    opacity: 0.5;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    border: 2px solid blue;
+    opacity: o.8;
+}
