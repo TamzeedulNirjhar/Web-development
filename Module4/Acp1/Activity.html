@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple calculator</title>
+    </head>
+    <body>
+        <h1 id="myh"></h1>
+        <h3>Sum[5+11]</h3>
+        <p id="sum"></p>
+        <h3>Multiplication[4*2</h3>
+        <p id="multiplication"></p>
+        <h3>Subtraction</h3>
+        <p id="sub"></p>
+        <h3>Division</h3>
+        <p id="div"></p>
+        <script>
+            //My heading
+             document.getElementById("myh").innerHTML = "Introduction to JS"
+
+             var a = 5
+             var b = 11
+            var sum = a + b
+             document.getElementById("sum").innerHTML = sum
+
+             var c = 4
+             var d = 2
+             var mul = c*d
+             document.getElementById("multiplication").innerHTML = mul
+
+             var t = 6
+             var u = 3
+             var sub = t-u
+             document.getElementById("sub").innerHTML = sub
+
+             var o = 6
+             var r = 3
+             var div = o/r
+             document.getElementById("div").innerHTML = div
+        </script>
+    </body>
+</html>
