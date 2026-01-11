@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <script>
+        class student {
+            constructor(name,year,grade) {
+                this.name = name;
+                this.year = year;
+                this.grade = grade;
+            }
+            //creating an age method for the student
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+
+        //creating objects to acess the class
+        student1 = new student("Nirjhar","Grade 8",2012)
+        document.getElementById("student1").innerHTML = "My name is "+ student1.name + ". I am in " + student1.grade + ". I am " + student1.age()+" years old"
+
+        student2 = new student("Faiaz", "Grade 8", 2012)
+            document.getElementById("student2").innerHTML = "My name is "+ student2.name + ". I am in " + student2.grade + ". I am "+ student2.age() + " years old"
+        </script>
+    </body>
+</html>
