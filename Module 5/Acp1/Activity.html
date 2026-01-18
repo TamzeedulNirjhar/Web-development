@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p id="animal1"></p>
+    <p id="animal2"></p>
+    <script>
+        class animal {
+            constructor(name, year, condition) {
+                this.name = name;
+                this.year = year;
+                this.condition = condition;
+            }
+            //creating an age method for the student
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+
+        //creating objects to acess the class
+        animal1 = new animal("Bob", 2022,"cute" )
+        document.getElementById("animal1").innerHTML = "My cat's name is " + animal1.name + ". He is really " + animal1.condition + ". He is " + animal1.age() + " years old"
+
+        animal2 = new animal("Max", 2023, "energetic")
+        document.getElementById("animal2").innerHTML = "My dog's name is " + animal2.name + ". He is  " + animal2.condition + ". He is " + animal2.age() + " years old"
+    </script>
+</body>
+
+</html>
