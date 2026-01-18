@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <h1>Array Mapping</h1>
+    <body>
+        <p id="map"></p>
+
+        <script>
+            var numbers = [1,2,3,4,5];
+
+            function result(num){
+                return num * 2
+            }
+            document.getElementById("map").innerHTML = numbers.map(result)
+        </script>
+    </body>
+</html>
