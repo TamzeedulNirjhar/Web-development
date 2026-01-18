@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Javascript Array</h1>
+        <p id="fruits"></p>
+        <p id="ascending"></p>
+        <p id="descending"></p>
+
+        <script>
+            var fruits = ["Mango","Kiwi","Watermelon","Jackfruit"]
+            document.getElementById("fruits").innerHTML = "The fruits array: " + fruits
+
+            //ascending order
+            document.getElementById("ascending").innerHTML = "The ascending order: " + fruits.sort()
+
+            //deascending order
+                document.getElementById("descending").innerHTML = "The descending order: " + fruits.reverse()
+        </script>
+    </body>
+</html>
