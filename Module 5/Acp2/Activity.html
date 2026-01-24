@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Javascript Array and mapping</h1>
+        <p id="planets"></p>
+        <p id="ascending"></p>
+        <p id="descending"></p>
+        <p id="map"></p>
+        
+        <script>
+            var planets = ["Earth", "Mars", "Mercury", "Jupitar"]
+            document.getElementById("planets").innerHTML = "The planets array: " + planets
+
+            //ascending order
+            document.getElementById("ascending").innerHTML = "The ascending order: " + planets.sort()
+
+            //deascending order
+            document.getElementById("descending").innerHTML = "The descending order: " + planets.reverse()
+
+            var numbers = [20, 69, 89, 67, 1000];
+
+                function result(num) {
+                    return num * 69
+                }
+                document.getElementById("map").innerHTML = numbers.map(result)
+        </script>
+    </body>
+</html>
