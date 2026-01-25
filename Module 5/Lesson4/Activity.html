@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head></head>
-    <h1>Array Mapping</h1>
     <body>
-        <p id="map"></p>
+        <h1>JS type conversion</h1>
+        <p id="result"></p>
+        <p id="string"></p>
 
         <script>
-            var numbers = [1,2,3,4,5];
-
-            function result(num){
-                return num * 2
-            }
-            document.getElementById("map").innerHTML = numbers.map(result)
+            var num1 = 70;
+            var num2 = 90;
+            var result = num1 + num2
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("string").innerHTML = String(num1) + String(num2);
         </script>
     </body>
 </html>
