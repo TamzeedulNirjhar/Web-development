@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h2>JOSN</h2>
+        <p id="result"></p>
+
+        <script>
+            //creating an object
+            var myself = {
+                'name' : 'Nirjhar',
+                'age' : 14,
+                'grade' : 8
+            }
+            //Converting the object to json
+            var myJson = JSON.stringify(myself);
+
+            //converting back to object
+            var newObj = JSON.parse(myJson)
+
+            document.getElementById("result").innerHTML = "My name is "+ newObj.name + ". I am " + newObj.age + ". I am in grade "+ newObj.grade
+
+        </script>
+    </body>
+</html>
