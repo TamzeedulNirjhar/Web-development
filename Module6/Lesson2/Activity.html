@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Create a palindrome checking fucntion</h1>
+        <script>
+            function palindrome(word){
+                var input = word.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+
+                var reversed = input.split('').reverse().join('')
+
+                if (input == reversed){
+                    document.write(word+" is a palindrome.");
+                }
+
+                else {
+                    document.write(word+" is not palindrome");
+                }
+                
+            }
+            palindrome('Owl');
+        </script>
+    </body>
+</html>
