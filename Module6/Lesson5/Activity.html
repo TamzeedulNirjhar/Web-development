@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div class="wrapper">
+            <h1>Stopwatch</h1>
+            <p><span id="sec">00</span>:<span id="millisec">00</span></p>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">reset</button>
+        </div>
+
+        <script>
+            window.onload = function(){
+                var sec = 0;
+                var millisec = 0;
+                var appendMillisec = document.getElementById("millisec");
+
+                var appendSec = document.getElementById("sec");
+
+                var start = document.getElementById("start");
+
+                var stop = document.getElementById("stop");
+
+                var reset = document.getElementById("reset");
+
+                var Interval
+
+                start.onclick = function(){
+                    clearInterval(Interval);
+                    Interval = setInterval(startTimer,10)
+                }
+
+                stop.onclick = function () {
+                    clearInterval(Interval);
+                }
+
+                reset.onclick = function () {
+                    clearInterval(Interval);
+                    sec = 0;
+                    millisec = 0;
+                    appendMillisec.innerHTML = "00";
+                    appendSec.innerHTML = "oo"
+                }
+
+                function startTimer(){
+                    millisec++;
+
+                    if (millisec<10){
+                        appendMillisec.innerHTML = "0" + millisec
+                    }
+
+                    else {
+                        appendMillisec.innerHTML = millisec;
+                    }
+
+                    if (millisec>=100){
+                        sec++;
+                        millisec = 0;
+                        appendMillisec.innerHTML = "00";
+
+                        if (sec<10){
+                            appendSec.innerHTML = "0" + sec
+                        }
+                        else{
+                            appendSec.innerHTML = sec;
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
