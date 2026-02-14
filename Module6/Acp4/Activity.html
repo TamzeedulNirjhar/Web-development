@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Background Color</title>
+</head>
+
+<body>
+
+    <!-- Button in HTML section -->
+    <button onclick="changeColor()">Click Me!</button>
+
+    <script>
+        // JS function for picking random colours
+        function changeColor() {
+
+            // Generate random numbers between 0–255
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+
+            // Set the rgb() value
+            var bgcolor = "rgb(" + r + "," + g + "," + b + ")";
+
+            // Apply as background style
+            document.body.style.background = bgcolor;
+        }
+    </script>
+
+</body>
+
+</html>
