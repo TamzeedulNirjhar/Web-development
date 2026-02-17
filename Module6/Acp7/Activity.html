@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter App</title>
+</head>
+
+<body>
+
+    <h1>Counter App</h1>
+
+    <h2 id="counter-value">0</h2>
+
+    <button id="button-increment">Increase</button>
+    <button id="button-decrement">Decrease</button>
+    <button id="button-reset">Reset</button>
+
+    <script>
+
+        window.onload = function () {
+
+            var value = 0;
+
+            var button_increment = document.getElementById("button-increment");
+            var button_decrement = document.getElementById("button-decrement");
+            var button_reset = document.getElementById("button-reset");
+
+            var counterDisplay = document.getElementById("counter-value");
+
+            function increase() {
+                value++;
+                counterDisplay.innerHTML = value;
+            }
+
+            function decrease() {
+                value--;
+                counterDisplay.innerHTML = value;
+            }
+
+            function reset() {
+                value = 0;
+                counterDisplay.innerHTML = value;
+            }
+
+            button_increment.onclick = increase;
+            button_decrement.onclick = decrease;
+            button_reset.onclick = reset;
+        };
+    </script>
+
+</body>
+
+</html>
