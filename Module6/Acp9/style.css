@@ -26,3 +26,13 @@ body {
     background-color: rgb(255, 68, 0);
     color: black;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(212, 14, 14);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
