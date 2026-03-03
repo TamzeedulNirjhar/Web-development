@@ -36,3 +36,62 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+.contact-container {
+    max-width: 500px;
+    background: #05feb7;
+    padding: 50px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff00e6;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0415ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 15px;
+    }
+}
